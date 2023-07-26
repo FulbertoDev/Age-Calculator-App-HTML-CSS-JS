@@ -56,5 +56,5 @@ Users should be able to:
 ## Author
 
 - Website - [Fulberto TCHIAKPE](https://www.fulberto.dev)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Frontend Mentor - [@Gilles-Christ](https://www.frontendmentor.io/profile/Gilles-Christ)
+- Twitter - [@Fulberto98](https://www.twitter.com/Fulberto98)
