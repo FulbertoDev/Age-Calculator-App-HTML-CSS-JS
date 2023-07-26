@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+    * {
+      font-family: 'Poppins', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    ::root {
+      --purple: #854dff;
+      --light-red: #ff5757;
+      --off-white: #f0f0f0;
+      --light-grey: #dbdbdb;
+      --smokey-grey: #716f6f;
+      --off-black: #141414;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <h1 class="hidden">Frontend Mentor | Age calculator app</h1>
+    <div class="w-screen h-screen bg-[#f0f0f0] flex justify-center items-center">
+      <div class="bg-white rounded-3xl rounded-br-[250px] lg:w-2/4 p-8 lg:h-3/4 w-full h-fit mx-8">
+        <div class="grid grid-cols-3 lg:grid-cols-4 gap-4">
+          <div class="flex flex-col">
+            <label id="day-input-label" class="text-[#716f6f] uppercase font-bold text-sm tracking-widest">Day</label>
+            <input id="day-input-field" placeholder="DD" class="mt-1 block w-full px-4 py-3 bg-white border border-[#dbdbdb]
+            rounded-md text-[#716f6f] text-2xl font-bold shadow-sm placeholder-[#716f6f]
+            focus:outline-none focus:border-[#854dff] focus:ring-1 focus:ring-[#854dff]" />
+            <small id="day-helper-text" class="text-red-500 italic"></small>
+          </div>
+
+          <div class="flex flex-col">
+            <label id="month-input-label"
+              class="text-[#716f6f] uppercase font-bold text-sm tracking-widest">Month</label>
+            <input id="month-input-field" placeholder="MM" class="mt-1 block w-full px-4 py-3 bg-white border border-[#dbdbdb]
+            rounded-md text-[#716f6f] text-2xl font-bold shadow-sm placeholder-[#716f6f]
+            focus:outline-none focus:border-[#854dff] focus:ring-1 focus:ring-[#854dff]" />
+            <small id="month-helper-text" class="text-red-500 italic"></small>
+          </div>
+
+          <div class="flex flex-col">
+            <label id="year-input-label" class="text-[#716f6f] uppercase font-bold text-sm tracking-widest">Year</label>
+            <input id="year-input-field" placeholder="YYYY" class="mt-1 block w-full px-4 py-3 bg-white border border-[#dbdbdb]
+            rounded-md text-[#716f6f] text-2xl font-bold shadow-sm placeholder-[#716f6f]
+            focus:outline-none focus:border-[#854dff] focus:ring-1 focus:ring-[#854dff]" />
+            <small id="year-helper-text" class="text-red-500 italic"></small>
+          </div>
+        </div>
+
+        <div class="w-full relative my-8">
+          <hr class="bg-[#dbdbdb]" />
+          <div id="submitButton"
+            class="h-16 w-16 bg-[#854dff] absolute right-0 -translate-y-1/2 flex justify-center items-center rounded-full p-4 hover:cursor-pointer">
+            <img src="assets/images/icon-arrow.svg" alt="Arrow-Key" />
+          </div>
+        </div>
+
+        <div class="flex flex-col space-y-4">
+          <div class="flex text-8xl font-bold space-x-4 italic">
+            <span id="year-view" class="text-[#854dff]">--</span>
+            <span class="text-[#141414]">years</span>
+          </div>
+          <div class="flex text-8xl font-bold space-x-4 italic">
+            <span id="month-view" class="text-[#854dff]">--</span>
+            <span class="text-[#141414]">months</span>
+          </div>
+          <div class="flex text-8xl font-bold space-x-4 italic">
+            <span id="day-view" class="text-[#854dff]">--</span>
+            <span class="text-[#141414]">days</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script type="text/javascript" src="index.js"></script>
+
+</body>
+
+</html>
